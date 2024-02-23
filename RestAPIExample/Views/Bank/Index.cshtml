@@ -1,0 +1,37 @@
+﻿@model Tarih_Date
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+<div>
+    <p>Tarih: @Model.Tarih</p>
+</div>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Döviz Kodu</th>
+        <th>Birim</th>
+        <th>Döviz Cinsi</th>
+        <th>Döviz Alış</th>
+        <th>Döviz Satış</th>
+        <th>Efektif Alış</th>
+        <th>Efektif Satış</th>
+        
+
+    </tr>
+    @foreach(var x in Model.Currency)
+    {
+        <tr>
+            <td>@x.Kod</td>
+            <td>@x.Unit</td>
+            <td>@x.Isim</td>
+            <td>@x.ForexBuying</td>
+            <td>@x.ForexSelling</td>
+            <td>@x.BanknoteBuying</td>
+            <td>@x.BanknoteSelling</td>
+        </tr>
+    }
+   
+    </table>

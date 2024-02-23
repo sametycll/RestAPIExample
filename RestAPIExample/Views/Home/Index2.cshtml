@@ -1,0 +1,13 @@
+﻿@model WeatherInfo
+
+<div class="text-center">
+    <h1 class="display-4">ÖZEL APIDEN VERİ ÇEKME</h1>
+</div>
+
+<br /><br />
+<h2>Ülke: @Model.sys.country</h2>
+<h2>Şehir: @Model.name</h2>
+<h2>Sıcaklık: @Model.main.temp </h2>
+<h2>Nem: @Model.main.humidity </h2>
+<h2>Rüzgar: @Model.wind.speed </h2>
+<h2>Basınç: @Model.main.pressure hPa</h2>
