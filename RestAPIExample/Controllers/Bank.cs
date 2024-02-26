@@ -32,18 +32,3 @@ namespace RestAPIExample.Controllers
         }
     }
 }
-
-
-
-
-
-
-////XML İLE VERİ ÇEKME
-//string link = "https://www.tcmb.gov.tr/kurlar/today.xml";
-//var xmlDoc = new XmlDocument();
-//xmlDoc.Load(link);
-//string USDBanknoteBuying = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/BanknoteBuying").InnerXml;
-//string USDBanknoteSelling = xmlDoc.SelectSingleNode("Tarih_Date/Currency[@Kod='USD']/BanknoteSelling").InnerXml;
-
-//ViewBag.USDBanknoteSelling = USDBanknoteSelling;
-//ViewBag.USDBanknoteBuying = USDBanknoteBuying;
